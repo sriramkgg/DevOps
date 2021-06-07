@@ -17,8 +17,8 @@ When the compression type argument is bzip, tbzip is performed and the backup ar
 
 The command for decrypting the archive (depending on the compression type) is given below
 
-openssl enc -d -aes256 -in 'outputfile'.tar | tar x -C test
-openssl enc -d -aes256 -in 'outputfile'.tar.gz | tar xz -C test
-openssl enc -d -aes256 -in 'outputfile'.tar.tbz | tar xj -C test
+1) openssl enc -d -aes256 -in 'outputfile'.tar | tar x -C test
+2) openssl enc -d -aes256 -in 'outputfile'.tar.gz | tar xz -C test
+3) openssl enc -d -aes256 -in 'outputfile'.tar.tbz | tar xj -C test
 
 I have used the encryption/decryption code from the site https://www.tecmint.com/encrypt-decrypt-files-tar-openssl-linux/
